@@ -72,10 +72,6 @@ public class Product {
         String amountFormat = "%-10s";
         String formatInfo = nameFormat + " " + idFormat + " " + priceFormat + " " + amountFormat;
 
-        // for(int i = 0; i < attributeStrings.length; i++) {
-        //     System.out.format(formatInfo, attributeStrings[i], attributeStrings[i], attributeStrings[i], attributeStrings[i]);
-        //     System.out.println();
-        // }
         System.out.format(formatInfo, attributeStrings[0], attributeStrings[1], attributeStrings[2], attributeStrings[3]);
         System.out.println();
     }

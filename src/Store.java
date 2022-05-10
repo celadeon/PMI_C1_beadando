@@ -31,10 +31,6 @@ public class Store {
         productList.remove(index);        
     }
 
-    public void modifyProduct(int index, Product product) {
-        productList.set(index, product);
-    }
-
     public void printProducts() {
         if(productList.size() == 0) {
             System.out.println("list empty");

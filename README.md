@@ -1,17 +1,38 @@
-## Getting Started
+## Kisbolti nyilvántartó program
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A program XML fájlban tárolja a nyilvántartási listát, amit indításkor automatikusan betölt és bezáráskor elment.  
 
-## Folder Structure
+## Mappák felépítése
 
-The workspace contains two folders by default, where:
+A program két mappát tartalmaz:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `src`: forráskódot tartalmazó mappa.
+- `resources`: a nyivántartást tartalmazó XML fájl (products.xml) található itt.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Osztályok
+> Product: 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Privát attributumok:
+- `Name: String`: a termék neve
+- `Id: int`: a termék azonosítója
+- `Price: float`: a termék ára
+- `Amount: int`: a termék raktáron lévő mennyisége
+
+Publikus metódusok:
+- `Getterek, setterek (name, id, price, amount`
+- `Comparator (name, id, price, amount)`: a nyilvántartási lista rendezéséhez szükséges comparatorok minden attributumhoz
+- `printProduct(): void`: formázva kiírja a konzolra a termék attributumait
+
+> Store
+
+Privát attributumok:
+- `productList: ArrayList<Product>`: a termékeket tartalmazó lista
+
+Publikus metódusok:
+- `Store()`: üres konstruktor
+- `addProduct(Product product)`: paraméterben megadott termék hozzáadása a listához
+- `removeProduct(int index)`: paraméterben megadott indexű elem törlése a listából
+- 
 
 ## Dependency Management
 
