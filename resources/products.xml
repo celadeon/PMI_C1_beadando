@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<products>
+    <product>
+        <name>bread</name>
+        <id>1</id>
+        <price>2.5</price>
+        <amount>23</amount>
+    </product>
+    <product>
+        <name>milk</name>
+        <id>2</id>
+        <price>1.99</price>
+        <amount>9</amount>
+    </product>
+    <product>
+        <name>cheese</name>
+        <id>3</id>
+        <price>9.99</price>
+        <amount>12</amount>
+    </product>
+    <product>
+        <name>chocolte</name>
+        <id>6</id>
+        <price>4.55</price>
+        <amount>42</amount>
+    </product>
+    <product>
+        <name>water</name>
+        <id>7</id>
+        <price>0.79</price>
+        <amount>77</amount>
+    </product>
+    <product>
+        <name>pasta</name>
+        <id>11</id>
+        <price>1.49</price>
+        <amount>37</amount>
+    </product>
+    <product>
+        <name>energy drink</name>
+        <id>23</id>
+        <price>3.99</price>
+        <amount>28</amount>
+    </product>
+</products>
