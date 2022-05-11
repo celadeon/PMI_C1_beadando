@@ -1,4 +1,4 @@
-## Kisbolti nyilvántartó program
+# Kisbolti nyilvántartó program
 
 A program XML fájlban tárolja a nyilvántartási listát, amit indításkor automatikusan betölt és bezáráskor elment.  
 
@@ -10,7 +10,7 @@ A program két mappát tartalmaz:
 - `resources`: a nyivántartást tartalmazó XML fájl (products.xml) található itt.
 
 ## Osztályok
->Product: 
+### Product: 
 
 Privát attributumok:
 - `Name: String`: a termék neve
@@ -25,7 +25,7 @@ Publikus metódusok:
 - `printProduct(): void`: formázva kiírja a konzolra a termék attributumait
 
 
->Store
+### Store
 
 Privát attributumok:
 - `productList: ArrayList<Product>`: a termékeket tartalmazó lista
@@ -49,7 +49,7 @@ Privát metódusok:
 - `createChildElement(Document document, Element parent, String tagName, String value): void`: segédmetódus az XML-be íráshoz
 
 
->App
+### App
 
 Ez az osztály tartalmazza a `main`-t és egy példányt a `Store` osztályból.
 
@@ -77,7 +77,7 @@ Privát metódusok:
 - `createNewProduct(): Product`: egymás után bekéri a felhasználótól az új termék nevét, azonosítóját, árát, és mennyiségét majd visszatér a megadott adatokból létrehozott termékkel
 
 
->XML felépítése
+## XML felépítése
 - `<products>`: root element
 - `<product>`: termék példány tag-je
 - `<name>`: adott termék nevét tartalmazó tag 
